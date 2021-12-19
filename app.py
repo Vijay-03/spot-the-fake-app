@@ -15,7 +15,7 @@ import streamlit_authenticator as stauth
 global model
 
 def importdata(): 
-    balance_data = pd.read_csv('D:/Academic_Projects/Mini_Project/Project/FakeProfile/Profile/dataset/dataset.txt')
+    balance_data = pd.read_csv('dataset/dataset.txt')
     balance_data = balance_data.abs()
     rows = balance_data.shape[0]  # gives number of row count
     cols = balance_data.shape[1]  # gives number of col count
@@ -59,10 +59,10 @@ def GenerateModel(request):
 def UserCheck(request, model):
     input = 'Account_Age,Gender,User_Age,Link_Desc,Status_Count,Friend_Count,Location,Location_IP\n';
     input += request+"\n"
-    f = open("D:/Academic_Projects/Mini_Project/Project/FakeProfile/Profile/dataset/test.txt", "w")
+    f = open("dataset/test.txt", "w")
     f.write(input)
     f.close()
-    test = pd.read_csv('D:/Academic_Projects/Mini_Project/Project/FakeProfile/Profile/dataset/test.txt')
+    test = pd.read_csv('dataset/test.txt')
     test = test.values[:, 0:8]
     # predict = model.predict_classes(test)
     predict = np.argmax(model.predict(test), axis=-1)
@@ -77,13 +77,13 @@ def UserCheck(request, model):
 
 
 def ViewTrain():
-    data = pd.read_csv('D:/Academic_Projects/Mini_Project/Project/FakeProfile/Profile/dataset/dataset.txt')
+    data = pd.read_csv('dataset/dataset.txt')
     return data
 
 
 st.title("Spot The Fake App") 
 
-image_file_path = "D:/Academic_Projects/Mini_Project/Project/FakeProfile/Profile/static/images/f4.jpg"
+image_file_path = "images/f4.jpg"
 
 heading = '<p style = "font-family: Franklin Gothic; color: #F63366;' \
           ' font-size: 20px;">Developed by Vijay</p'
