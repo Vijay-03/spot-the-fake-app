@@ -110,9 +110,9 @@ if add_dropbox == "Home":
     important in the provided solution.")
 
 elif add_dropbox == "Admin":
-    names = ['Vijay','Jk', 'Sandeeo']
-    usernames = ['vijay','jk', 'sandeep']
-    passwords = ['vijay', 'jk', 'sandeep']
+    names = ['Vijay', 'Admin']
+    usernames = ['vijay', 'admin']
+    passwords = ['vijay', 'admin']
 
     hashed_passwords = stauth.hasher(passwords).generate()
 
