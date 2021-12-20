@@ -1,8 +1,0 @@
-tensorflow==2.7.0
-keras==2.7.0
-pandas==1.3.4
-scikit-learn==1.0.1
-streamlit==1.3.0
-streamlit-authenticator==0.0.5
-Pillow==8.4.0
-silence_tensorflow
