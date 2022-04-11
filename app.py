@@ -85,9 +85,9 @@ st.title("Spot The Fake App")
 
 image_file_path = "images/f4.jpg"
 
-heading = '<p style = "font-family: Franklin Gothic; color: #F63366;' \
-          ' font-size: 20px;">Developed by Vijay</p'
-st.write(heading, unsafe_allow_html=True)
+# heading = '<p style = "font-family: Franklin Gothic; color: #F63366;' \
+#           ' font-size: 20px;">Developed by Vijay</p'
+# st.write(heading, unsafe_allow_html=True)
 
 # st.write( "<font color = ‘red’>THIS TEXT WILL BE RED</font>", unsafe_allow_html=True)
 
