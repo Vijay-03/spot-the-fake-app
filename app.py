@@ -1,7 +1,7 @@
 import silence_tensorflow.auto
 from sklearn.model_selection import train_test_split
 from keras.models import Sequential
-from keras.layers.core import Dense, Activation, Dropout
+from keras.layers import Dense, Activation, Dropout
 from keras.callbacks import EarlyStopping
 from sklearn.preprocessing import OneHotEncoder
 from tensorflow.keras.optimizers import Adam
